@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+	head
+		title #{title} - My Site
+		link(rel='stylesheet', href='stylesheets/rgnstyle.css')
+		link(rel='stylesheet', href='stylesheets/component.css')
+		link(rel='stylesheet', href='stylesheets/jquery.countdown.css')
+		link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
+		script(src="js/jquery.min.js" type="text/javascript")
+		script(src="js/jquery.countdown.js")
+		script(src="js/script.js")
+	body
+		.container1
+			.content-header
+				h1 this website will overthrow your mind
+				p Our website is under construction but we are in the final stage of the development program.
+			#counter
+			.clear
+			.notify
+				input(type="text" class="textbox" value="Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}")
+				input(class="md-trigger md-setperspective" data-modal="top-scorll" type="button" value="Subscribe")
+			.social-icons
+				h3 Catch on
+				ul
+					li
+						a(href="#")
+							img(src="images/facebook.png" title="facebook")
+					li
+						a(href="#")
+							img(src="images/twitter.png" title="Twiiter")
+					li
+						a(href="#")
+							img(src="images/rss.png" title="Rss")
+					li
+						a(href="#")
+							img(src="images/gpluse.png" title="Google+")
+			.copy-right
+				p Design by 
+					a(href="javascript:void(0)") Rijin t
